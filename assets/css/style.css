@@ -33,7 +33,7 @@ h6 {
 .grid-container{
     min-height: 100%;
     display: grid;
-    grid-template-columns: 33% 1fr;
+    grid-template-columns: 25% 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: 
         'sidebar main'
