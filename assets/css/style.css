@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  
+    height: 100%
 }
 
 h1 {
@@ -31,15 +31,13 @@ h6 {
 }
 
 .grid-container{
+    min-height: 100%;
     display: grid;
     grid-template-columns: 33% 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr auto;
     grid-template-areas: 
-    
-    'main main'
-        'sidebar sidebar'
-    'copyright copyright'  
-    
+        'sidebar main'
+        'footer footer'     
 }
 
 #sidebar{
@@ -68,7 +66,7 @@ h6 {
 }
 
 
-#copyright {
-    grid-area: copyright;
-    /* text-align: center; */
+#footer {
+    grid-area: footer;
+    text-align: center;
 }
