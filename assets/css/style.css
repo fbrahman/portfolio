@@ -1,0 +1,74 @@
+html {
+    height: 100%;
+}
+
+body {
+  
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    
+    'main main'
+        'sidebar sidebar'
+    'copyright copyright'  
+    
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background: rgba(46, 46, 46, 1)
+}
+
+#image-wrapper{
+    height: 14em;
+    width: 14em;
+    overflow: hidden;
+    border: 3px solid black;
+    /* background: radial-gradient(circle, white, teal); */
+    border-radius: 50%;    
+}
+
+#headshot{
+    height: 15em;
+    width: auto;
+    transform: scaleX(-1);
+    mix-blend-mode: screen;
+}
+
+#main-content{
+    grid-area: main;
+}
+
+
+#copyright {
+    grid-area: copyright;
+    /* text-align: center; */
+}
